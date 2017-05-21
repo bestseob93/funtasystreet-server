@@ -1,0 +1,19 @@
+<html>
+  <head>
+    <script src="https://code.createjs.com/createjs-2015.11.26.min.js"></script>
+    <script>
+      var soundID = "Thunder";
+
+      function loadSound () {
+        createjs.Sound.registerSound("https://cf-media.sndcdn.com/p97gSdx07ZpB.128.mp3?Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiKjovL2NmLW1lZGlhLnNuZGNkbi5jb20vcDk3Z1NkeDA3WnBCLjEyOC5tcDMiLCJDb25kaXRpb24iOnsiRGF0ZUxlc3NUaGFuIjp7IkFXUzpFcG9jaFRpbWUiOjE0ODk2NjczNjh9fX1dfQ__&Signature=pVU0GPqdz90D16nsHB5QTvlX9GCuZczVR-uUexpsrOE68BFjgj2Wd5MIzEgtXfFhvjDzU7SMr6VGPPzLzORO2n0nidEHwWrPFnrTAoBphFPGKYDVvq-DDV38SjBv9DQY3qsQkQT3ypHPtp1GXpme~gqNylQ7Zg8GtAWvc1ARjwI-D6AOA-JxbJJHyL63hLZq-mMHnrMwBj3lOLJM5lL5iIKgQ38rXTCx6L3HRFz8bJUrA8hXj1hcLEoqCSzUlhUk9TS9nfD7nnIVa0mOEBOchhOZcJaL1toVA5~IPNbm36epVNGbwETyYuBRCcHTuZUdD9GJjumiZASjS7e0MV3XUQ__&Key-Pair-Id=APKAJAGZ7VMH2PFPW6UQ", soundID);
+      }
+
+      function playSound () {
+        createjs.Sound.play(soundID);
+      }
+    </script>
+  </head>
+  <body onload="loadSound();">
+    <button onclick="playSound();" class="playSound">Play Sound</button>
+  </body>
+</html>
